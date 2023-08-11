@@ -1,0 +1,105 @@
+.Nav_container {
+    background-color: black;
+    justify-content: space-evenly;
+    display :flex;
+    width: 100%; 
+    padding: 1rem; 
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .Nav_container a{
+    text-decoration: none;
+  }
+
+  .Nav_logo{
+    font-family: 'Seaweed Script', cursive;
+    font-size: 2vw;
+    color: white;
+  }
+
+  .Nav_logo img {
+    width:2vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .Nav_items{
+    margin-top: 0.5vw;
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+
+
+  .Nav_btn{
+    margin-top: 0.5vw;
+  }
+
+  .Nav_btn button{
+    border-radius: 25px;
+    padding: 0.2vw 1.5vw;
+    background-color: #73C299;
+  }
+
+  .Nav_btn button:hover{
+    border: solid white 2px;
+    color: white;
+  }
+
+.Nav_items div,
+.Nav_btn div {
+    color: white;
+    white-space: nowrap;
+}
+
+  @media screen and (max-width: 425px) {
+    .Nav_items{
+      display: flex;
+      gap: 10px;
+      font-size:x-small;
+      justify-content: space-between
+    }
+
+    .Nav_container {
+      padding: 2vh; 
+
+    }
+    .Nav_logo,
+    .Nav_items div,
+    .Nav_btn div {
+    font-size:x-small
+}
+.Nav_btn{
+  
+}
+
+  }
+
+
+
+  @media screen and (min-width: 1440px) {
+    .Nav_items{
+      display: flex;
+      gap: 3vmax;
+      justify-content: space-between;
+    }
+
+    .Nav_container {
+      background-color: black;
+      justify-content: space-evenly;
+      display :flex;
+      width: 100%; 
+      padding: 1rem; 
+    }
+
+    .Nav_logo{
+      font-weight: 100;
+    }
+    .Nav_items,
+    .Nav_btn  {
+      font-size: 1vw;
+}
+.Nav_btn{
+  
+}
+  }
