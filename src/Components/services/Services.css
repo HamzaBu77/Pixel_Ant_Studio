@@ -1,0 +1,62 @@
+.Package_container{
+    margin-bottom: 5%;
+ }
+ .Header{
+  margin-left: 30%;
+   font-size: 40px;
+   font-weight: 500;
+   color : black;
+   margin-top: 10%;
+ }
+ .section_container {
+     display: flex;
+     justify-content: space-between; 
+     text-align: center;
+     margin: 2% 15%;
+   }
+ 
+   .content_container{
+     display: flex;
+     justify-content: space-between; 
+     text-align: left;
+     margin: 0% 5%;
+   }
+ 
+   .Section_content {
+     flex: 1; 
+     margin: 10px;
+     padding: 10px; 
+     border: 1px solid #ccc;
+   }
+ 
+   .Section_content  h3{
+     margin-top: 10%;
+     margin-bottom: 5%;
+     color: #73C299;
+   }
+   .Section_content img{
+     width: 70px;
+     margin-top: 10%;
+   }
+   
+   .Section_content:hover {
+     background-color:#73C299;
+     color: white;
+   }
+
+   .Section_content:hover h3{
+    color: white;
+  }
+ 
+   .Section_content button{
+     color: #73C299;
+     background-color: transparent;
+     border: none;
+ 
+   }
+ 
+   .Section_content:hover button  {
+     background-color: #73C299;
+     color:white;
+   }
+

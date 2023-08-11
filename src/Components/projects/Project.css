@@ -1,0 +1,13 @@
+.Projects_Description{
+    text-align: center;
+}
+.Project_Container{
+    display: flex;
+    gap: 4vw;
+    margin: 2% 10%;
+}
+
+.Project_Container img{
+    width: 25vw;
+    height: 25vw
+}
