@@ -29,6 +29,7 @@ let AboutUs = () => {
         setAnimatedCounters(counters.map(counter => ({ ...counter, currentCount: 0 })));
     }, []);
     return (
+        <>
         <div className="about-section">
             <span className="about-title">About founder</span>
             <h3 className="about-heading">Get to know him</h3>
@@ -56,16 +57,21 @@ let AboutUs = () => {
                 </div>
 
             </div>
-
-            <div className="counters">
-                {animatedCounters.map((counter, index) => (
-                    <div className="counter" key={index}>
-                        <div className="number">{counter.currentCount}</div>
-                        <div className="label">{counter.label}</div>
-                    </div>
-                ))}
-            </div>
+          
         </div>
+             <div className="Counter_div">
+
+             <div className="counters">
+                 {animatedCounters.map((counter, index) => (
+                     <div className="counter" key={index}>
+                         <div className="number">{counter.currentCount}</div>
+                         <div className="label">{counter.label}</div>
+                     </div>
+                 ))}
+             </div>
+         </div>
+         </>
+        
     )
 }
 export default AboutUs;

@@ -67,18 +67,16 @@
   }
 }
 
-
-
-
-
-
-
+.Counter_div{
+  background-color: #73C299;
+}
 
 
 .counters {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin: 0 5%;
   }
   
   .counter {
@@ -87,8 +85,13 @@
   
   .number {
     font-size: 2em;
-    color: #73C299; /* Change to your desired color */
+    font-weight: bolder;
+    color: white; /* Change to your desired color */
     animation: countup 2s ease-in-out forwards;
+  }
+
+  .label{
+    font-weight: 1000;
   }
   
   @keyframes countup {
