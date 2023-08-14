@@ -49,33 +49,21 @@
     }
 }
 
-@media screen and (max-width:425px) {
-
+@media screen and (max-width:768px) {
     .home-img {
-        width: 45vw;
-    }
-
-    .home-container {
-        padding: 8%;
-        width: auto;
-        background-color: #73C299;
-    }
-
-    .home-description {
-        margin-top: 10%;
-        text-align: start;
-    }
-
-    .home-description h1 {
-        font-size: 3vw;
-    }
-
-    .home-description h1 span {
-        font-family: 'Shrikhand', cursive;
-    }
-
-    .home-description h3 {
-        font-family: 'Diphylleia', serif;
-        font-size: 1.5vw;
+        width: 30vw;
     }
 }
+
+@media screen and (max-width:425px) {
+    .home-img {
+        width: 20vw;
+    }
+    .home-container {
+        padding: 8%;
+        margin: 0;
+        width: 100%;
+        background-color: #73C299;
+    }
+}
+

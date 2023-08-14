@@ -1,13 +1,4 @@
-.Package_container{
-    margin-bottom: 5%;
- }
- .Header{
-  margin-left: 30%;
-   font-size: 40px;
-   font-weight: 500;
-   color : black;
-   margin-top: 10%;
- }
+
  .section_container {
      display: flex;
      justify-content: space-between; 
@@ -24,18 +15,21 @@
  
    .Section_content {
      flex: 1; 
-     margin: 10px;
-     padding: 10px; 
+     padding: 1vw; 
      border: 1px solid #ccc;
+      margin-bottom: 10%;
+      margin-right: 5%;
    }
  
    .Section_content  h3{
      margin-top: 10%;
      margin-bottom: 5%;
      color: #73C299;
+     font-size: 2vw;
    }
+
    .Section_content img{
-     width: 70px;
+     width: 5vw;
      margin-top: 10%;
    }
    
@@ -59,4 +53,80 @@
      background-color: #73C299;
      color:white;
    }
+
+
+   .Section_Tittle{
+     text-align: center;
+     margin-top: 10%;
+   }
+
+   .Section_Tittle span{
+    color: #73C299;
+    font-weight: 600;
+   }
+
+
+   .section_animation{
+    opacity: 0;
+    animation: section_animation 3s forwards;
+   }
+
+@keyframes section_animation{
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Counter_div{
+  background-color:#73C299;
+  padding: 5%;
+}
+
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter {
+  text-align: center;
+}
+
+.number {
+  font-size: 2em;
+  font-weight: bolder;
+  color: white; 
+  animation: countup 5s ease-in-out forwards;
+}
+
+.label{
+  font-weight: 1000;
+  color: black;
+}
+
+@keyframes countup {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .Section_content {
+    flex: 1; 
+    padding: 2vw; 
+    border: 1px solid #ccc;
+     margin-bottom: 10%;
+  }
+
+}
 

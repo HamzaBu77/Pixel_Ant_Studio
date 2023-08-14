@@ -1,0 +1,13 @@
+.Contact_Form{
+    margin: 5% 20% 10% 20%;
+}
+
+.Form_title{
+   text-align: center;
+   margin: 5%;
+}
+
+.Form_title span{
+    color: #73C299;
+    font-weight: 600;
+}

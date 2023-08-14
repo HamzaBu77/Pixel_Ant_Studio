@@ -52,54 +52,54 @@
     white-space: nowrap;
 }
 
-  @media screen and (max-width: 425px) {
-    .Nav_items{
-      display: flex;
-      gap: 10px;
-      font-size:x-small;
-      justify-content: space-between
-    }
 
-    .Nav_container {
-      padding: 2vh; 
-
-    }
-    .Nav_logo,
-    .Nav_items div,
-    .Nav_btn div {
-    font-size:x-small
-}
-.Nav_btn{
-  
+  /* Add styles for the hamburger button */
+.Hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }
 
+.Hamburger .bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 3px auto;
+  background-color: white;
+}
+
+/* Hide the regular navigation links by default */
+.Nav_items {
+  display: none;
+}
+
+/* Show the regular navigation links for larger screens */
+@media screen and (min-width: 426px) {
+  .Nav_items {
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+}
+
+/* Show the hamburger button and the hamburger menu for smaller screens */
+@media screen and (max-width: 425px) {
+  .Hamburger {
+    display: block;
   }
 
-
-
-  @media screen and (min-width: 1440px) {
-    .Nav_items{
-      display: flex;
-      gap: 3vmax;
-      justify-content: space-between;
-    }
-
-    .Nav_container {
-      background-color: black;
-      justify-content: space-evenly;
-      display :flex;
-      width: 100%; 
-      padding: 1rem; 
-    }
-
-    .Nav_logo{
-      font-weight: 100;
-    }
-    .Nav_items,
-    .Nav_btn  {
-      font-size: 1vw;
-}
-.Nav_btn{
-  
-}
+  .Nav_container.menu-open .Nav_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1;
   }
+}
