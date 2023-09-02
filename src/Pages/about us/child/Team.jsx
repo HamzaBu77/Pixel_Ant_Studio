@@ -10,6 +10,10 @@ let Team = () => {
     
     return (
         <section id="team">
+             <div className="About_Hero">
+    <h1 className="Hero_tittle">Where Imagination Meets Innovation</h1>
+    <p>At PixelAnt Studio, we believe that your home should be a reflection of your unique style and personality. Our talented team of designers and artists is here to turn your dreams into reality, crafting spaces that are both functional and visually stunning.</p>
+    </div>
             <h2 className="Team-title animated">Meet Our Team</h2>
             <br />
             <div className="row Team-portfolio animated">
@@ -35,6 +39,8 @@ let Team = () => {
 
                 </div>
             </div>
+
+      
            
         </section>)
 }

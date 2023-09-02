@@ -4,8 +4,8 @@
 let Hero =() =>{
     return(
     <div className="About_Hero">
-    <h1 className="Hero_tittle">Where Imagination Meets Innovation</h1>
-    <p>At PixelAnt Studio, we believe that your home should be a reflection of your unique style and personality. Our talented team of designers and artists is here to turn your dreams into reality, crafting spaces that are both functional and visually stunning.</p>
+    <h1 className="Hero_tittle">Unleash Your Imagination</h1>
+    <p>Are you ready to transform your living spaces into breathtaking works of art? Look no further than PixelAnt Studio, your premier destination for cutting-edge interior design and captivating 3D artistry.We specialize in creating modern kitchen, bathroom, and living room designs that seamlessly blend contemporary aesthetics with timeless elegance. Whether you're looking for sleek minimalism or cozy comfort, we've got you covered.</p>
     </div>
     )
 }
