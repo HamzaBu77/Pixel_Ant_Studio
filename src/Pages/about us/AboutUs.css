@@ -114,4 +114,16 @@
       
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+/* Hero.css */
+.About_Hero{
+    margin: 10% 20%;
+}
+
+.Hero_tittle{
+    text-align: center;
+    color: #73C299;
+    font-family: Lily Script One;
+}
+
   

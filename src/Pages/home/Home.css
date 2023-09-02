@@ -14,12 +14,11 @@
     text-align: start;
 }
 
-.home-description h1 {
-    font-size: 3vw;
-}
-
-.home-description h1 span {
+.header {
     font-family: 'Shrikhand', cursive;
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 .home-description h3 {
