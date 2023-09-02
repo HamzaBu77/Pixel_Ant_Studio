@@ -1,105 +1,79 @@
-.Nav_container {
-    background-color: black;
-    justify-content: space-evenly;
-    display :flex;
-    width: 100%; 
-    padding: 1rem; 
-    flex-wrap: wrap;
-    overflow: hidden;
-  }
-
-  .Nav_container a{
-    text-decoration: none;
-  }
-
-  .Nav_logo{
-    font-family: 'Seaweed Script', cursive;
-    font-size: 2vw;
-    color: white;
-  }
-
-  .Nav_logo img {
-    width:2vw;
-    margin-bottom: 0.5vw;
-  }
-
-  .Nav_items{
-    margin-top: 0.5vw;
-    display: flex;
-    gap: 2vw;
-    flex-wrap: wrap;
-  }
-
-
-  .Nav_btn{
-    margin-top: 0.5vw;
-  }
-
-  .Nav_btn button{
-    border-radius: 25px;
-    padding: 0.2vw 1.5vw;
-    background-color: #73C299;
-  }
-
-  .Nav_btn button:hover{
-    border: solid white 2px;
-    color: white;
-  }
-
-.Nav_items div,
-.Nav_btn div {
-    color: white;
-    white-space: nowrap;
+nav {
+  background: #73C299;
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
 }
 
-
-  /* Add styles for the hamburger button */
-.Hamburger {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
+.Toggle_icon{
+  color: #ffffff;
 }
 
-.Hamburger .bar {
-  display: block;
-  width: 20px;
-  height: 3px;
-  margin: 3px auto;
+.nav-link.active-link{
+color: white;
+}
+
+.nav-link:hover{
+  color: black;
+  }
+
+#Btn-orange {
   background-color: white;
+  color: #73C299;
+  border: none;
+  padding: 0.6vw 1.5vw;
 }
 
-/* Hide the regular navigation links by default */
-.Nav_items {
-  display: none;
+#Btn-orange:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 0.6vw 1.5vw;
 }
 
-/* Show the regular navigation links for larger screens */
-@media screen and (min-width: 426px) {
-  .Nav_items {
-    display: flex;
-    gap: 2vw;
-    flex-wrap: wrap;
+
+.logo {
+  margin-left: 15vw;
+  width: 2.5vw;
+}
+
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+
+.logo :hover{
+ color:black
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+@media screen and (max-width:425px){
+  #Btn-orange {
+      background-color: #F13232;
+      color: white;
+      border: none;
+     font-size: 4vh;
+  }
+  .logo img{
+      width: 10vw;
   }
 }
 
-/* Show the hamburger button and the hamburger menu for smaller screens */
-@media screen and (max-width: 425px) {
-  .Hamburger {
-    display: block;
-  }
+@media screen and (min-width:1440px){
+ .nav-link{
+  font-size: 1.3vw;
+  margin-right: 1vw;
+ }
 
-  .Nav_container.menu-open .Nav_items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    padding: 10px 0;
-    z-index: 1;
-  }
+ #Btn-orange {
+  background-color: #F13232;
+  color: white;
+  border: none;
+  padding: 1vw 3vw;
 }
+
+}
+

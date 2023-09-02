@@ -72,3 +72,46 @@
         font-size: 2.5vw;
     }
 }
+
+/* Team.css */
+.Team-title{
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 10%;
+    opacity: 0;
+    animation: animated 6s forwards;
+}
+
+.Team-portfolio{
+  margin: 1% 15% 5% 15%;
+  opacity: 0;
+    animation: animated 6s forwards;
+}
+
+.img_design{
+    width: 15vw;
+    height: 15vw;
+}
+
+@keyframes animated{
+  from {
+      opacity: 0;
+      transform: translateY(10%);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media screen and (max-width:768px) {
+    .Team-portfolio{
+        margin: 5% 10% 5% 10%;
+        opacity: 0;
+          animation: animated 6s forwards;
+          font-size: 1.5vw;
+      }
+      
+}
+
+  

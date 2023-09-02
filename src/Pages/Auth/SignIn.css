@@ -1,0 +1,90 @@
+.Navbar{
+    background-color: rgba(27, 27, 27, 1)
+}
+.Login_Form{
+    margin: 5% 30%;
+    border: 2px solid rgba(145, 145, 145, 0.25);
+    border-radius: 0.5vw;
+    padding: 5% ;
+}
+
+.Login_Form a{
+    text-decoration: none;
+}
+
+.Login_Form input{
+    background-color: rgba(217, 217, 217, 1);
+    color: rgba(180, 175, 175, 1);
+}
+
+.Login_Form_title{
+    font-family: Lily Script One;
+font-size: 3vw;
+font-weight: 400;
+line-height: 4vw;
+letter-spacing: 0em;
+text-align: center;
+color: #73C299;
+}
+
+.login_Btn{
+    background: #73C299;
+    border: none;
+    color: white;
+    padding: 2% 5%;
+    margin-left: 40%;
+}
+
+.Btn-red{
+    border: none;
+    color: #73C299;
+    background-color: white;
+}
+
+
+
+.form_text{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.Google_btn{
+ color: rgba(180, 175, 175, 1)
+}
+
+.Facebook_btn{
+background-color: rgba(59, 89, 152, 1);
+color: white;
+
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(128, 125, 125, 1);
+  }
+  
+  .divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: rgba(217, 217, 217, 1);
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .Login_Form{
+        margin: 5% 10%;
+        border: 2px solid rgba(145, 145, 145, 0.25);
+        border-radius: 0.5vw;
+        padding: 5% ;
+    }
+    
+  }

@@ -1,7 +1,7 @@
-import "./Team.css"
-import Member1 from "../../Assets/Member1.jpg"
-import Member2 from "../../Assets/Member2.jpg"
-import Member3 from "../../Assets/Member3.jpg"
+
+import Member1 from "../../../Assets/Member1.jpg"
+import Member2 from "../../../Assets/Member2.jpg"
+import Member3 from "../../../Assets/Member3.jpg"
 
 
 let Team = () => {

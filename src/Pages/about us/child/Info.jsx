@@ -1,8 +1,8 @@
-import "./AboutUs.css"
-import founder from "../../Assets/founder.jpg"
+
+import founder from "../../../Assets/founder.jpg"
 
 
-let AboutUs = () => {
+let Info = () => {
    
     return (
         <section id="about">
@@ -40,4 +40,4 @@ let AboutUs = () => {
         
     )
 }
-export default AboutUs;
+export default Info;

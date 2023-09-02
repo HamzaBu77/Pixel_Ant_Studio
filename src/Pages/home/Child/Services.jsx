@@ -1,7 +1,6 @@
-import "./Services.css"
-import Service1 from "../../Assets/3d-rendering.png"
-import Service2 from "../../Assets/interior-design.png"
-import Service3 from "../../Assets/kitchen-room.png"
+import Service1 from "../../../Assets/3d-rendering.png"
+import Service2 from "../../../Assets/interior-design.png"
+import Service3 from "../../../Assets/kitchen-room.png"
 import React, { useEffect, useState } from 'react';
 
   

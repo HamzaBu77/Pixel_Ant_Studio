@@ -1,64 +1,52 @@
-import React, { useState } from "react";
-import logo from "../../Assets/nav_logo.jpeg";
-import "./Navbar.css";
 import { Link } from "react-router-dom";
+import logo from "../../Assets/nav_logo.jpeg"
+import "./Navbar.css";
 
 let Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   return (
-    <header>
-      <div className={`Nav_container ${menuOpen ? "menu-open" : ""}`}>
-        <a href="/">
-          <div className="Nav_logo">
-            <img src={logo} alt="nav logo" />
-          </div>
-        </a>
+    <nav className="navbar navbar-expand-lg p-3">
 
-        {/* Hamburger Icon for small screens */}
-        <button className="Hamburger" onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+      <div className="container-fluid d-flex ">
+
+        <div >
+        <Link to="/" ><img className="logo" src={logo} alt="nav logo"/></Link>
+        </div>
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+
+        >
+          <i className="fa-solid fa-bars Toggle_icon"></i>
         </button>
 
-        <div className={`Nav_items ${menuOpen ? "show" : ""}`}>
-          <a href="index.html">
-            <div>Home </div>
-          </a>
-
-          <a href="#about">
-            <div>About us</div>
-          </a>
-
-          <a href="#projects">
-            <div>Projects</div>
-          </a>
-
-          <a href="#services">
-            <div>Services</div>
-          </a>
-
-          <a href="#FAQ">
-            <div>FAQ</div>
-          </a>
-
-          <a href="#contact">
-            <div>Contact Us</div>
-          </a>
+        <div className="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link active-link" to="/" exact>HOME</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active-link" to="/about">ABOUT US</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active-link" to="/contact">CONTACT US</Link>
+            </li>
+          </ul>
+          <div >
+            <Link to="/login">
+              <button className="rounded-pill " id="Btn-orange" type="button"><i class="fa-regular fa-user"></i>Login</button>
+            </Link>
+          </div>
         </div>
 
-        <div className="Nav_btn">
-          <Link to="/login">
-            <button>Login</button>
-          </Link>
-        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

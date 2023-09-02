@@ -1,5 +1,3 @@
-import "./FAQ.css"
-
 
 let FAQ = () =>{
     return(

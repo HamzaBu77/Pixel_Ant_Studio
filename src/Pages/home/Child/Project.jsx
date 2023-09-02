@@ -1,10 +1,10 @@
-import Project1 from "../../Assets/kitchen design.png"
-import Project2 from "../../Assets/bathroom.png"
-import Project3 from "../../Assets/livign room.png"
-import Project4 from "../../Assets/Bedroom.png"
-import Project5 from "../../Assets/Dinning_Room.png"
-import Project6 from "../../Assets/Tudor_Design.png"
-import "./Project.css"
+import Project1 from "../../../Assets/kitchen design.png"
+import Project2 from "../../../Assets/bathroom.png"
+import Project3 from "../../../Assets/livign room.png"
+import Project4 from "../../../Assets/Bedroom.png"
+import Project5 from "../../../Assets/Dinning_Room.png"
+import Project6 from "../../../Assets/Tudor_Design.png"
+
 
 let Projects = () =>{
     return(

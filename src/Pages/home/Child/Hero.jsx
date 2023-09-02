@@ -1,7 +1,6 @@
-import Homeimg from "../../Assets/home.jpeg"
-import './Home.css'
+import Homeimg from "../../../Assets/home.jpeg"
 
-let Home = () => {
+let Hero = () => {
     return (
         <div className="row featurette home-container">
             <div className="col-md-7 col-sm-7 home-description">
@@ -16,4 +15,4 @@ let Home = () => {
     )
 }
 
-export default Home;
+export default Hero;
