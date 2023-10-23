@@ -10,7 +10,7 @@ let Footer = () => {
                     <div className="col-xl-3 col-sm-6 col-md-3 col-lg-3">
                         <div className="single-footer-widget footer_1">
                             <h4>About Us</h4>
-                            <p>your go-to destination for delicious fast food on the go!</p>
+                            <p>your go-to studio for Interior Designs!</p>
                         </div>
                     </div>
                     <div className="col-xl-3 col-sm-6 col-md-3 col-lg-3">
@@ -19,7 +19,7 @@ let Footer = () => {
                             <div className="contact_info">
                                 <p><span> Address :</span>steet 76 , Lahore </p>
                                 <p><span> Phone :</span> +92 36 265 (8060)</p>
-                                <p><span> Email : </span>info@Foody.com </p>
+                                <p><span> Email : </span>info@pixelant.com </p>
                             </div>
                         </div>
                     </div>
